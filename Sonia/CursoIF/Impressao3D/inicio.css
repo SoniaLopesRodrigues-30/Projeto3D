@@ -1,0 +1,160 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.top-bar {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover { color: #007bff; }
+
+/* Botão de Destaque */
+.btn-orcamento {
+  background: #007bff;
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+
+.btn-orcamento:hover { transform: scale(1.05); }
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  height: 100px;   /* Define uma altura fixa para a barra não crescer */
+  background-color: #fff;
+  overflow: hidden; /* Garante que nada "vaze" para fora */
+  padding: 10px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Ocupa a altura disponível da barra */
+}
+
+.logo img {
+  border-radius: 5px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  width: auto;      /* Deixa a largura automática */
+  max-height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

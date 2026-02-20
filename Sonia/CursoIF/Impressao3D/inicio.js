@@ -12,3 +12,5 @@ function toggleDrawer() {
 openBtn.addEventListener('click', toggleDrawer);
 closeBtn.addEventListener('click', toggleDrawer);
 overlay.addEventListener('click', toggleDrawer);
+
+

@@ -1,182 +1,94 @@
-:root {
-  --primary-color: #2ecc71;
-  --dark-color: #2c3e50;
-  --bg-light: #f4f4f4;
-}
 
-body { font-family: sans-serif; margin: 0; background: var(--bg-light); }
-
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
-}
-
-.product-card {
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.product-card:hover { transform: translateY(-5px); }
-
-.btn-add {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-height: 450px;
-  overflow: hidden; /* Esconde as imagens que não estão em foco */
-}
-
-.carousel-slides {
+.slider-container {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Suaviza a transição */
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.custom-slide img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-.slide {
-  min-width: 100%; /* Cada slide ocupa a largura total da tela */
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
-.slide img {
-  width: 100%;
-  height: 450px;
-  object-fit: cover; /* Ajusta a imagem sem distorcer */
-}
-
-/* Estilo dos Botões */
-.carousel-prev, .carousel-next {
+.nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
+  background: rgba(0, 212, 255, 0.8);
   border: none;
+  color: white;
   padding: 15px;
   cursor: pointer;
-  font-size: 20px;
   border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-.carousel-prev { left: 20px; }
-.carousel-next { right: 20px; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-btn:hover { background: #00d4ff; }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Estilo do Rodapé */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.footer-box h3 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.footer-box a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+  color: #00d4ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}

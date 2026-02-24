@@ -1,0 +1,94 @@
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.custom-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 212, 255, 0.8);
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover { background: #00d4ff; }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Estilo do Rodapé */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.footer-box h3 {
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.footer-box a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+  color: #00d4ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}

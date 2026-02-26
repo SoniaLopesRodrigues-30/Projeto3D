@@ -1,95 +1,7 @@
-:root {
-  --primary-color: #007bff;
-  --drawer-bg: #ffffff;
-}
-
-/* O Menu Lateral */
-.drawer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px; /* Largura do menu */
-  height: 100%;
-  background: var(--drawer-bg);
-  z-index: 2000;
-  transform: translateX(-100%); /* Esconde à esquerda */
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Quando o menu está aberto */
-.drawer.open {
-  transform: translateX(0);
- 
-}
-
-.drawer-header {
-  padding: 20px;
-  background: #f8f9fa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
-}
-
-.drawer-content ul { list-style: none; padding: 10px 0; }
-
-.drawer-content a {
-  display: block;
-  padding: 15px 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-.drawer-content a:hover { background: #f0f7ff; color: var(--primary-color); }
-
-.drawer-label {
-  padding: 15px 20px 5px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  color: #999;
-  letter-spacing: 1px;
-}
-
-/* Overlay (Fundo escuro) */
-.drawer-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: none; /* Escondido por padrão */
-  z-index: 1500;
-}
-
-.drawer-overlay.active { display: block; }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;  
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 60px 0;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-
-.product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 
@@ -99,22 +11,6 @@
     gap: 25px;
     padding: 40px;
 }
-
-.product-card {
-  border: 1px solid #eee;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden; /* Garante que a imagem não saia do card */
-  transition: transform 0.3s ease;
-  animation: fadeIn 0.5s ease backwards;
-  overflow: hidden;    
-  display: flex;
-  flex-direction: column;
-}
-
 
 .product-img {
     width: 100%;
@@ -147,34 +43,6 @@
     margin-top: 10px;
 }
 
-#slider {
-  display: flex;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Suaviza a animação */
-  will-change: transform;
-}
-
-
-.custom-slider {  
-  margin: 0 auto;     /* Centraliza o carrossel horizontalmente */
-  overflow: hidden;   /* Esconde os slides que estão fora da área visível */
-  border-radius: 15px; /* Opcional: arredonda as bordas do carrossel */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Opcional: dá profundidade */    
-  min-width: 100%; /* Cada slide ocupa toda a largura do container */
-  position: relative;
-}
-.slider-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%; 
-}
-
-.custom-slide img {
-  width: 100%;        /* Agora ocupa 100% da área do slide */
-  height: 400px;      /* Altura fixa ou ajuste conforme sua preferência */
-  object-fit: cover;  /* Mantém a proporção sem distorcer */
-  display: block;
-}
-
 
 .info {
   position: absolute;
@@ -188,29 +56,17 @@
 }
 
 
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 212, 255, 0.8);
-  border: none;
-  color: white;
-  padding: 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: 0.3s;
-   z-index: 10; 
-}
+
 /* Container que limita o tamanho e centraliza */
 .carousel-container {
   position: relative;
-  width: 60%;           /* Ajuste aqui a largura (60%, 50%, 800px...) */
+  width: 95%;          /* Ajuste aqui a largura (60%, 50%, 800px...) */
   max-width: 800px;     /* Limite máximo para telas grandes */
   margin: 40px auto;    /* O 'auto' nas laterais centraliza o bloco */
   overflow: hidden;     /* Esconde as imagens que estão "fora" da vez */
   border-radius: 20px;  /* Deixa as bordas arredondadas e elegantes */
   box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* Sombra para destacar */
+  
 
 }
 
@@ -246,12 +102,9 @@
   border-radius: 50%;
   z-index: 10;
   transition: 0.3s;
-}
-
-.carousel-prev:hover, .carousel-next:hover {
-  background: #007bff;
   scale: 1.1;
 }
+
 
 .carousel-prev { left: 15px; }
 .carousel-next { right: 15px; }
@@ -259,11 +112,16 @@
 * Estilo do Rodapé */
 .footer {
   background-color: #1a1a1a;
-  color: #fff;
-  padding: 40px 0 20px;
-  margin-top: 50px;
-  font-family: Arial, sans-serif;
 }
+
+.footer {
+ background-color: var(--bg-footer);
+ color: var(--text-light);
+ padding: 60px 5% 20px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin-top: 50px;
+}
+
 
 .footer-content {
   display: flex;
@@ -294,23 +152,6 @@
 
 .footer-box a:hover {
   color: #00d4ff;
-}
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 20px;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-
-.footer {
-    background-color: var(--bg-footer);
-    color: var(--text-light);
-    padding: 60px 5% 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-container {
@@ -358,6 +199,37 @@
 .footer-col ul li a:hover {
     color: var(--primary-color);
     padding-left: 8px;
+}
+
+
+
+/* Rodapé Inferior */
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+
+
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
 }
 
 @keyframes fadeIn {

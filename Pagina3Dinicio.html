@@ -3,9 +3,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Desafio 3</title>
- <link rel="stylesheet" type="text/css" href="inicio1.css" /> 
- <link rel="stylesheet" type="text/css" href="inicio.css" /> 
+<title>Impressão 3D</title>
+ <link rel="stylesheet" type="text/css" href="./css/inicio.css" /> 
+ <link rel="stylesheet" type="text/css" href="./css/inicio1.css" /> 
 </head>
 
 <!-- Estrutura do Drawer -->
@@ -18,13 +18,12 @@
   <nav class="drawer-content">
     <ul>
       <li><a href="#">🏠 Início</a></li>
-      <li><p class="drawer-label">Produtos Prontos</p></li>
-      <li><a href="#">🏺 Decoração</a></li>
-      <li><a href="#">🎮 Action Figures</a></li>
-      <li><a href="#">📂 Organizadores</a></li>
-      
+      <li><p class="drawer-label">Trabalhos Realizados</p></li>
+      <li><a href="#">🚗 Automotivo</a></li>
+      <li><a href="#">📦 Diversos</a></li>
+      <li> <a href="#">🖼️ Decoração</a></li>
       <li><p class="drawer-label">Serviços</p></li>
-      <li><a href="#" class="highlight">🚀 Orçamento Personalizado</a></li>
+      <li><a href="#" class="highlight">📋 Orçamento Personalizado</a></li>
       <li><a href="#">🔧 Suporte Técnico</a></li>
     </ul>
   </nav>
@@ -51,19 +50,24 @@
 
     <div class="logo">
       <a href="index.html">
-        <img src="./imagens/logo.jpeg" alt="Nome da Sua Loja 3D">
+        <img src="./imagens/logo.png" alt="Nome da Sua Loja 3D">
       </a>
     </div>
     
     <ul class="nav-links">
       <li><a href="#decoracao">Decoração</a></li>
-      <li><a href="#geek">Universo Geek</a></li>
-      <li><a href="#utilitarios">Utilitários</a></li>
-      <li><a href="#orcamento" class="btn-orcamento">Orçamento STL</a></li>
+      <li><a href="#geek">Automotivo</a></li>
+      <li><a href="#utilitarios">Diversos</a></li>
+      <li><a href="#orcamento" class="btn-orcamento">Orçamento</a></li>
     </ul>
+    <div class="search-container">      
+      
+      <input type="text" id="searchInput" placeholder="Buscar miniatura (ex: Knight, Mago...)" class="search-input">
+      
+    </div>
 
     <div class="nav-icons">
-      <a href="#"><i class="search-icon">🔍</i></a>
+      <a href="#"><i class="search-icon">🔍</i></a>      
       <a href="#"><i class="cart-icon">🛒</i></a>
     </div>
   </nav>
@@ -74,12 +78,13 @@
   <section class="carousel-container">
   <div class="carousel-slides" id="slides">
     <!-- Imagens do Banner -->
-    <div class="slide"><img src="./imagens/imagem1_1.jpeg" alt="Promoção 1"></div>
+    <div class="slide"><img src="./imagens/imagem8_1.jpeg" alt="Promoção 1"></div>
+    <div class="slide"><img src="./imagens/imagem8_7.jpeg" alt="Outlet"></div>
     <div class="slide"><img src="./imagens/imagem2_2.jpeg" alt="Lançamentos"></div>
     <div class="slide"><img src="./imagens/imagem3_1.jpeg" alt="Outlet"></div>
     <div class="slide"><img src="./imagens/imagem5_1.jpeg" alt="Outlet"></div>
     <div class="slide"><img src="./imagens/imagem6_1.jpeg" alt="Outlet"></div>
-    <div class="slide"><img src="./imagens/imagem7_1.jpeg" alt="Outlet"></div>
+    
   </div>
   
   <!-- Botões de Navegação -->
@@ -91,173 +96,18 @@
 
 <section class="portfolio">
     <h2 class="section-title">Nossas Impressões</h2>
-    <div class="products-grid">
-        <!-- Card de Produto -->
-        <div class="product-card glass-card">
-            <div class="product-badge">Resina 4K</div>
-            <img src="./imagens/imagem1_1.jpeg" alt="Miniatura de RPG" class="product-img">
-            <div class="product-info">
-                <h3>Miniatura Knight</h3>
-                <p>Nível de detalhe: 0.03mm</p>
-                <span class="tag">Colecionáveis</span>
-            </div>
-        </div>
-        
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem2_2.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-              <h3>Miniatura Knight</h3>
-              <p>Nível de detalhe: 0.03mm</p>
-              <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-        
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem3_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-              <h3>Miniatura Knight</h3>
-              <p>Nível de detalhe: 0.03mm</p>
-              <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem5_4.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
- 
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem6_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem7.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem8_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem9_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem10_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem11_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem12.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem13_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem14_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem15_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
-        <div class="product-card glass-card">
-          <div class="product-badge">Resina 4K</div>
-          <img src="./imagens/imagem16_1.jpeg" alt="Miniatura de RPG" class="product-img">
-          <div class="product-info">
-            <h3>Miniatura Knight</h3>
-            <p>Nível de detalhe: 0.03mm</p>
-            <span class="tag">Colecionáveis</span>
-          </div>
-        </div>
-
+    <!-- O ID deve ficar na mesma div que tem o display: grid -->
+    <div id="product-container" class="products-grid">
+        <!-- O JS vai injetar os cards aqui -->
     </div>
 </section>
-    <script type="text/javascript" src="inicio.js"> </script>
-    
+
+    <script type="text/javascript" src="./js/inicio.js"> </script>    
 </body>
 <footer class="footer">
     <div class="footer-content">
       <div class="footer-box">
-        <h3>Sua Loja 3D</h3>
+        <h3>G3D Impressões 3D</h3>
         <p>Transformando ideias digitais em realidade física com alta precisão.</p>
       </div>
       <div class="footer-box">
@@ -268,8 +118,8 @@
       </div>
       <div class="footer-box">
         <h3>Contato</h3>
-        <p>Email: contato@loja3d.com</p>
-        <p>WhatsApp: (00) 00000-0000</p>
+        <p>Email: gu_lr@yahoo.com.br</p>
+        <p>WhatsApp: (54) 99987-2994</p>
       </div>
     </div>
     <div class="footer-bottom">
